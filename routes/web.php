@@ -20,15 +20,15 @@ use App\Http\Controllers\MainController;
 //     return view('welcome');
 // });
 Route::get('/', [MainController::class, 'home']);
-
+Route::get('/contact', [MainController::class, 'contact']);
 // Route::get('/', function () {
 //     // return 'Hello World';
 //     return view('main');
 // });
-Route::get('/contact', function () {
-    // return 'Hello World';
-    return view('contacts');
-});
+// Route::get('/contact', function () {
+//     // return 'Hello World';
+//     return view('contacts');
+// });
 Route::get('/travel', function () {
     // return 'Hello World';
     return view('travel');

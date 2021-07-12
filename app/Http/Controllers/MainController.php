@@ -11,4 +11,8 @@ class MainController extends Controller
     {
         return view('main');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
 }
