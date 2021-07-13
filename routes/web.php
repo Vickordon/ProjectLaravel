@@ -19,7 +19,7 @@ use Illuminate\Routing\Route as RoutingRoute;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [MainController::class, 'home']);
+Route::get('/', [MainController::class, 'home'])->name('home');
 Route::get('/contact', [MainController::class, 'contact']);
 Route::post('/contact/check', [MainController::class, 'check']);
 // Route::get('/', function () {
