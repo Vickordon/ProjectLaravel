@@ -15,4 +15,13 @@ class MainController extends Controller
     {
         return view('contact');
     }
+    public function check(Request $request)
+    {
+        $valid = $request->validate([
+            'name' => 'required|min:4',
+            'tel' => 'required|min:6|max:13',
+            'email' => 'required|email|min:6',
+        ]);
+        dd($request);
+    }
 }

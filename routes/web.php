@@ -3,7 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
-
+use Illuminate\Routing\Route as RoutingRoute;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +21,7 @@ use App\Http\Controllers\MainController;
 // });
 Route::get('/', [MainController::class, 'home']);
 Route::get('/contact', [MainController::class, 'contact']);
+Route::post('/contact/check', [MainController::class, 'check']);
 // Route::get('/', function () {
 //     // return 'Hello World';
 //     return view('main');
