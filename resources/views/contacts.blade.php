@@ -1,6 +1,6 @@
 @extends('layoutHeader')
 @section('title')
-Контакти
+Контакти+ форма
 @endsection
 @section('main_content')
 <div class="container">
